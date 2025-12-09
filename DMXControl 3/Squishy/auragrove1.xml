@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device type="DMXDevice" dmxaddresscount="4" dmxcversion="3" ddfversion="0.3">
+  <information>
+    <model>Aura Grove 1</model>
+    <vendor>Squishyfamily</vendor>
+    <author>Squishy</author>
+    <mode>4 channel</mode>
+    <comment>u cute</comment>
+  </information>
+  <functions>
+      <position>
+      <pan name="forward" dmxchannel="0">
+        <range range="360"/>
+      </pan>
+      <tilt name="up" dmxchannel="1">
+        <range range="360"/>
+      </tilt>
+    </position>
+    <zoom name="size" dmxchannel="2" defaultval="0">
+      <range mindmx="0" maxdmx="255" minval="0" maxval="200" type="linear"/>
+    </zoom>
+    <iris name="shape" dmxchannel="3" defaultval="50">
+      <range mindmx="0" maxdmx="255" minval="1" maxval="100"/>
+    </iris>
+  </functions>
+</device>

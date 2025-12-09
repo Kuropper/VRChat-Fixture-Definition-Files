@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device type="DMXDevice" dmxaddresscount="31" dmxcversion="3" ddfversion="0.1.3">
+  <information>
+    <model>Laser V3</model>
+    <vendor>Techsane</vendor>
+    <author>Squishy</author>
+    <mode>31 Channel</mode>
+    <comment>Mwee</comment>
+  </information>
+  <functions>
+    <matrix rows="1" columns="2">
+      <rgb>
+        <red dmxchannel="0"/>
+        <green dmxchannel="1"/>
+        <blue dmxchannel="2"/>
+      </rgb>
+      <rgb>
+        <red dmxchannel="3"/>
+        <green dmxchannel="4"/>
+        <blue dmxchannel="5"/>
+      </rgb>
+    </matrix>
+    <dimmer name="Dimmer" dmxchannel="6"/>
+    <strobe name="Strobe" dmxchannel="7">
+      <step type="open" mindmx="0" maxdmx="8" />
+      <range type="linear" mindmx="8" maxdmx="255" minval="1" maxval="50" caption="Speed slow…fast"/>
+    </strobe>
+    <raw name="Hue" dmxchannel="8">
+      <range mindmx="0" maxdmx="255" caption="Hue"/>
+    </raw>
+      <raw name="Step Mix" dmxchannel="9">
+      <range mindmx="0" maxdmx="255" caption="Mix"/>
+    </raw>
+      <raw name="Step Count" dmxchannel="10">
+      <range mindmx="0" maxdmx="255" caption="Count"/>
+    </raw>
+    <focus name="Flat To Beam" dmxchannel="11" defaultval="50">
+      <range mindmx="0" maxdmx="255" caption="Flat To Beam" minval="1" maxval="100"/>
+    </focus>
+    <frost name="Beam Thickness" dmxchannel="12">
+      <range mindmx="0" maxdmx="255" caption="Beam Thickness"/>
+    </frost>
+    <raw name="Beam Scroll" dmxchannel="13">
+      <range mindmx="0" maxdmx="255" caption="Beam Scroll"/>
+    </raw>
+    <iris name="Beam Amount" dmxchannel="14" defaultval="3">
+      <range mindmx="0" maxdmx="255" caption="BeamCount" minval="1" maxval="100"/>
+    </iris>
+    <gobowheel dmxchannel="15">
+      <step type="open" mindmx="0" maxdmx="16" caption="Solid"/>
+      <step val="Rainbow.png" type="gobo" mindmx="17" maxdmx="33" caption="Rainbow"/>
+      <step val="Rainbowmirror.png" type="gobo" mindmx="34" maxdmx="50" caption="Rainbow Mirror"/>
+      <step val="Rainbowalt.png" type="gobo" mindmx="51" maxdmx="67" caption="Rainbow Alt"/>
+      <step val="Rainbowaltmirror.png" type="gobo" mindmx="68" maxdmx="84" caption="Rainbow Alt Mirror"/>
+      <step val="Rainbowrandom.png" type="gobo" mindmx="85" maxdmx="101" caption="Rainbow Random"/>
+      <step val="Rainbowrandomirror.png" type="gobo" mindmx="102" maxdmx="118" caption="Rainbow Random Mirror"/>
+      <step val="Rainbowgradienttight.png" type="gobo" mindmx="119" maxdmx="135" caption="Gradient Tight"/>
+      <step val="Rainbowgradienttightmirror.png" type="gobo" mindmx="136" maxdmx="152" caption="Gradient Tight Mirror"/>
+      <step val="Gradientnormal.png" type="gobo" mindmx="153" maxdmx="169" caption="Gradient Normal"/>
+      <step val="Gradientnormalmirror.png" type="gobo" mindmx="170" maxdmx="186" caption="Gradient Normal Mirror"/>
+      <step val="Gradiensmooth.png" type="gobo" mindmx="187" maxdmx="203" caption="Gradient Smooth"/>
+      <step val="Gradientsmoothmirror.png" type="gobo" mindmx="204" maxdmx="220" caption="Gradient Smooth Mirror"/>
+      <step val="Gradientrandom.png" type="gobo" mindmx="221" maxdmx="237" caption="Gradient Random"/>
+      <step val="Gradientrandommirror.png" type="gobo" mindmx="238" maxdmx="255" caption="Gradient Random Mirror"/>
+    </gobowheel>
+    <raw name="Gradient Scale" dmxchannel="16" defaultval="50">
+      <range mindmx="0" maxdmx="255" minval="1" maxval="100" caption="Effect parameter low…high" type="linear"/>
+    </raw>
+    <raw name="Gradient Speed" dmxchannel="17">
+      <range mindmx="0" maxdmx="255" minval="0" maxval="100" caption="Effect speed 0…100%" type="linear"/>
+    </raw>
+    <gobowheel dmxchannel="18">
+      <step type="open" mindmx="0" maxdmx="35" caption="Flat"/>
+      <step type="gobo" mindmx="36" maxdmx="71" caption="Circle"/>
+      <step type="gobo" mindmx="72" maxdmx="107" caption="Infinity"/>
+      <step type="gobo" mindmx="108" maxdmx="143" caption="Square"/>
+      <step type="gobo" mindmx="144" maxdmx="179" caption="Circle To Plus"/>
+      <step type="gobo" mindmx="180" maxdmx="215" caption="Polygon Generator"/>
+      <step type="gobo" mindmx="216" maxdmx="255" caption="Flower Generator"/>
+    </gobowheel>
+    <raw name="Shape Adjust" dmxchannel="19">
+      <range mindmx="0" maxdmx="255" minval="0" maxval="100" caption="Effect parameter 0…100%" type="linear"/>
+    </raw>
+    <rawstep name="Ripple Select" dmxchannel="20">
+      <step mindmx="0" maxdmx="35" caption="OFF"/>
+      <step mindmx="36" maxdmx="71" caption="Sine"/>
+      <step mindmx="72" maxdmx="107" caption="Square"/>
+      <step mindmx="108" maxdmx="143" caption="Triangle"/>
+      <step mindmx="144" maxdmx="179" caption="Pulse"/>
+      <step mindmx="180" maxdmx="215" caption="Sine 3"/>
+      <step mindmx="216" maxdmx="251" caption="Sine 3 (Ripple Saw)"/>
+      <step mindmx="252" maxdmx="255" caption="No function"/>
+    </rawstep>
+    <raw name="Ripple Scale" dmxchannel="21" defaultval="90">
+      <range mindmx="0" maxdmx="255" minval="1" maxval="100" caption="Effect parameter low…high" type="linear"/>
+    </raw>
+    <raw name="Ripple Height" dmxchannel="22" defaultval="20">
+      <range mindmx="0" maxdmx="255" minval="0" maxval="100" caption="Effect parameter 0…100%" type="linear"/>
+    </raw>
+    <raw name="Ripple Speed" dmxchannel="23" defaultval="20">
+      <range mindmx="0" maxdmx="255" minval="0" maxval="100" caption="Effect speed 0…100%" type="linear"/>
+    </raw>
+    <position>
+      <pan name="Pan" dmxchannel="24" finedmxchannel="25">
+        <range range="360"/>
+      </pan>
+      <tilt name="Tilt" dmxchannel="26" finedmxchannel="27">
+        <range range="360"/>
+      </tilt>
+    </position>
+    <raw name="Z Rotate" dmxchannel="28">
+      <range mindmx="0" maxdmx="255" minval="1" maxval="100" caption="Effect speed slow…fast" type="linear"/>
+    </raw>
+    <rawstep name="Z Rotate Mode" dmxchannel="29">
+      <step mindmx="0" maxdmx="127" caption="Manual 0% speed"/>
+      <step mindmx="128" maxdmx="190" caption="CW Rotate"/>
+      <step mindmx="191" maxdmx="255" caption="CW Rotate"/>
+    </rawstep>
+    <zoom name="Zoom" dmxchannel="30">
+      <range mindmx="0" maxdmx="255" minval="0.9" maxval="90" type="linear"/>
+    </zoom>
+  </functions>
+</device>

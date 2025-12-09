@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device type="DMXDevice" dmxaddresscount="2" dmxcversion="3" ddfversion="0.3">
+  <information>
+    <model>Aura Grove 2</model>
+    <vendor>Squishyfamily</vendor>
+    <author>Squishy</author>
+    <mode>2 channel</mode>
+    <comment>u cute</comment>
+  </information>
+  <functions>
+      <position>
+      <pan name="forward" dmxchannel="0">
+        <range range="360"/>
+      </pan>
+      <tilt name="up" dmxchannel="1">
+        <range range="360"/>
+      </tilt>
+    </position>
+  </functions>
+</device>
