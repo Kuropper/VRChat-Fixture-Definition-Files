@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="vrsl-mover.png" type="DMXDevice" dmxaddresscount="13" dmxcversion="3.2.3" ddfversion="1.1.1">
+  <information>
+    <model>VRSL Moving Head</model>
+    <vendor>VR Stage Lighting</vendor>
+    <author>Lirodon</author>
+    <mode>13-CH (13-Channel)</mode>
+  </information>
+  <functions>
+    <!-- So yeah it starts at 0 instead of 1. Ganz gut. -->
+    <position>
+      <pan dmxchannel="0" finedmxchannel="1">
+        <range range="540"/>
+      </pan>
+      <tilt dmxchannel="2" finedmxchannel="3">
+        <range range="180"/>
+      </tilt>
+    </position>
+    <zoom dmxchannel="4" >
+        <range mindmx="0" maxdmx="255" minval="14" maxval="30" defaultval="0"/>
+    </zoom>
+    <dimmer dmxchannel="5" defaultval="0"/>
+    <strobe dmxchannel="6">
+      <step type="open" mindmx="0" maxdmx="9"/>
+      <range type="linear" mindmx="10" maxdmx="255" minval="0" maxval="25"/>
+    </strobe>
+    <rgb>
+      <red dmxchannel="7"/>
+      <green dmxchannel="8"/>
+      <blue dmxchannel="9"/>
+    </rgb>
+    <gobowheel dmxchannel="11">
+        <goborotation dmxchannel="10">
+            <step type="stop" mindmx="0" maxdmx="9" />
+            <range type="cw" mindmx="10" maxdmx="126" />
+            <range type="ccw" mindmx="127" maxdmx="255" />
+        </goborotation>
+        <step type="open" mindmx="0" maxdmx="42" caption="Open" />
+        <step type="gobo" mindmx="43" maxdmx="85" caption="Gobo 1" />
+        <step type="gobo" mindmx="86" maxdmx="127" caption="Gobo 2" />
+        <step type="gobo" mindmx="128" maxdmx="170" caption="Gobo 3" />
+        <step type="gobo" mindmx="171" maxdmx="212" caption="Gobo 4" />
+        <step type="gobo" mindmx="213" maxdmx="255" caption="Gobo 5" />
+    </gobowheel>
+    <ptspeed dmxchannel="12">
+        <range type="linear" mindmx="0" maxdmx="255" minval="0" maxval="100" defaultval="10"/>
+    </ptspeed>
+  </functions>
+</device>

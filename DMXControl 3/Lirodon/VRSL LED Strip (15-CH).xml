@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="vrsl-ledstrip.png" type="DMXDevice" dmxaddresscount="15" dmxcversion="3.2.3" ddfversion="1.0.1">
+  <information>
+    <model>VRSL LED Strip</model>
+    <vendor>VR Stage Lighting</vendor>
+    <author>Lirodon</author>
+    <mode>15-CH (15-Channel)</mode>
+  </information>
+  <functions>
+    <rgb>
+      <red dmxchannel="0"/>
+      <green dmxchannel="1"/>
+      <blue dmxchannel="2"/>
+    </rgb>
+    <matrix dmxchannel="3" rows="1" columns="12" monochrome="true" >
+    </matrix>
+  </functions>
+</device>

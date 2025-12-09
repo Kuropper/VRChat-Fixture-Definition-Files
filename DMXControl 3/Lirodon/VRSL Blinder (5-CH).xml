@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="vrsl-blinder.png" type="DMXDevice" dmxaddresscount="5" dmxcversion="3.2.3" ddfversion="1.0.2">
+  <information>
+    <model>VRSL Blinder</model>
+    <vendor>VR Stage Lighting</vendor>
+    <author>Lirodon</author>
+    <mode>5-CH (5-Channel)</mode>
+  </information>
+  <functions>
+    <dimmer dmxchannel="0" defaultval="0"/>
+    <rgb>
+      <red dmxchannel="1"/>
+      <green dmxchannel="2"/>
+      <blue dmxchannel="3"/>
+    </rgb>
+    <strobe dmxchannel="4">
+      <step type="open" mindmx="0" maxdmx="9"/>
+      <range type="linear" mindmx="10" maxdmx="255" minval="0" maxval="25"/>
+    </strobe>
+  </functions>
+</device>

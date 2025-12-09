@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="vrsl-flasher.png" type="DMXDevice" dmxaddresscount="1" dmxcversion="3.2.3" ddfversion="1.0.1">
+  <information>
+    <model>VRSL Flasher</model>
+    <vendor>VR Stage Lighting</vendor>
+    <author>Lirodon</author>
+    <mode>1-CH (1-Channel)</mode>
+  </information>
+  <functions>
+    <dimmer dmxchannel="0" defaultval="0"/>
+  </functions>
+</device>

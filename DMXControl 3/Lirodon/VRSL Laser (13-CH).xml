@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="vrsl-laser.png" type="DMXDevice" dmxaddresscount="13" dmxcversion="3.2.3" ddfversion="1.1.1">
+  <information>
+    <model>VRSL Laser</model>
+    <vendor>VR Stage Lighting</vendor>
+    <author>Lirodon</author>
+    <mode>13-CH (13-Channel)</mode>
+  </information>
+  <functions>
+    <position>
+      <pan dmxchannel="0">
+        <range range="180"/>
+      </pan>
+      <tilt dmxchannel="1">
+        <range range="180"/>
+      </tilt>
+    </position>
+    <!-- Length -->
+    <iris dmxchannel="2">
+        <range mindmx="0" maxdmx="255" minval="0" maxval="100" defaultval="0" />
+    </iris>
+    <!-- Width -->
+    <zoom dmxchannel="3">
+        <range mindmx="0" maxdmx="255" minval="0" maxval="100" defaultval="0" />
+    </zoom >
+    <raw dmxchannel="4" name="Beam Flatness" />
+    <!-- Beam count -->
+    <raw dmxchannel="5" name="Beam Count">
+        <range mindmx="0" maxdmx="255" minval="0" maxval="100" defaultval="0" />
+    </raw >
+    <!-- Spin speed -->
+    <raw dmxchannel="6" name="Rotation Speed">
+        <range mindmx="0" maxdmx="255" minval="0" maxval="100" defaultval="0" />
+    </raw>
+    <rgb>
+      <red dmxchannel="7"/>
+      <green dmxchannel="8"/>
+      <blue dmxchannel="9"/>
+    </rgb>
+    <dimmer dmxchannel="10" defaultval="0"/>
+    <raw dmxchannel="11" name="Beam Thickness" />
+    <ptspeed dmxchannel="12">
+        <range type="linear" mindmx="0" maxdmx="255" minval="0" maxval="100" defaultval="10"/>
+    </ptspeed>
+  </functions>
+</device>
