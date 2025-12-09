@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>OSH-PC</Author>
+ </Creator>
+ <Manufacturer>VRSL</Manufacturer>
+ <Model>ScreenSpaceFX - Texture Overlay</Model>
+ <Type>Effect</Type>
+ <Channel Name="Wet/Dry Master" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Texture Select">
+  <Group Byte="1">Colour</Group>
+  <Capability Min="0" Max="21">Tex 1</Capability>
+  <Capability Min="22" Max="58">Tex 2</Capability>
+  <Capability Min="59" Max="94">Tex 3</Capability>
+  <Capability Min="95" Max="131">Tex 4</Capability>
+  <Capability Min="132" Max="167">Tex 5</Capability>
+  <Capability Min="204" Max="240">Tex 7</Capability>
+  <Capability Min="241" Max="255">Tex 8</Capability>
+ </Channel>
+ <Channel Name="Mix Method">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="42">None</Capability>
+  <Capability Min="43" Max="127">Multiply</Capability>
+  <Capability Min="128" Max="212">Add</Capability>
+  <Capability Min="213" Max="255">Divide</Capability>
+ </Channel>
+ <Channel Name="Alpha Cutout">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="127">None</Capability>
+  <Capability Min="128" Max="255">Cutout</Capability>
+ </Channel>
+ <Channel Name="X-Scale">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="X-Scale-Dir">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Y-Scale">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Y-Scale-Dir">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="X-Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="X-Speed-Dir">
+  <Group Byte="0">Pan</Group>
+ </Channel>
+ <Channel Name="Y-Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Y-Speed-Dir">
+  <Group Byte="0">Tilt</Group>
+ </Channel>
+ <Mode Name="12CH">
+  <Channel Number="0" ActsOn="0">Wet/Dry Master</Channel>
+  <Channel Number="1" ActsOn="1">Texture Select</Channel>
+  <Channel Number="2" ActsOn="2">Mix Method</Channel>
+  <Channel Number="3" ActsOn="3">Alpha Cutout</Channel>
+  <Channel Number="4" ActsOn="4">X-Scale</Channel>
+  <Channel Number="5" ActsOn="5">X-Scale-Dir</Channel>
+  <Channel Number="6" ActsOn="6">Y-Scale</Channel>
+  <Channel Number="7" ActsOn="7">Y-Scale-Dir</Channel>
+  <Channel Number="8" ActsOn="8">X-Speed</Channel>
+  <Channel Number="9" ActsOn="9">X-Speed-Dir</Channel>
+  <Channel Number="10" ActsOn="10">Y-Speed</Channel>
+  <Channel Number="11" ActsOn="11">Y-Speed-Dir</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

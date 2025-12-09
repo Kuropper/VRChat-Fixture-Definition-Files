@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>OSH-PC</Author>
+ </Creator>
+ <Manufacturer>VRSL</Manufacturer>
+ <Model>ScreenSpaceFX - Outline</Model>
+ <Type>Effect</Type>
+ <Channel Name="Wet/Dry Master" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Threshold">
+  <Group Byte="0">Maintenance</Group>
+ </Channel>
+ <Channel Name="Radius">
+  <Group Byte="0">Maintenance</Group>
+ </Channel>
+ <Channel Name="Glow">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="Mixture">
+  <Group Byte="0">Colour</Group>
+ </Channel>
+ <Channel Name="Outline - Red" Preset="IntensityRed"/>
+ <Channel Name="Outline - Green" Preset="IntensityGreen"/>
+ <Channel Name="Outline - Blue" Preset="IntensityBlue"/>
+ <Channel Name="Background - Alpha">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="Background - Red" Preset="IntensityRed"/>
+ <Channel Name="Background - Green" Preset="IntensityGreen"/>
+ <Channel Name="Background - Blue" Preset="IntensityBlue"/>
+ <Channel Name="Background - Mix Method">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Mode Name="13CH">
+  <Channel Number="0" ActsOn="0">Wet/Dry Master</Channel>
+  <Channel Number="1" ActsOn="1">Threshold</Channel>
+  <Channel Number="2" ActsOn="2">Radius</Channel>
+  <Channel Number="3" ActsOn="3">Glow</Channel>
+  <Channel Number="4" ActsOn="4">Mixture</Channel>
+  <Channel Number="5" ActsOn="5">Outline - Red</Channel>
+  <Channel Number="6" ActsOn="6">Outline - Green</Channel>
+  <Channel Number="7" ActsOn="7">Outline - Blue</Channel>
+  <Channel Number="8" ActsOn="8">Background - Alpha</Channel>
+  <Channel Number="9" ActsOn="9">Background - Mix Method</Channel>
+  <Channel Number="10" ActsOn="10">Background - Red</Channel>
+  <Channel Number="11" ActsOn="11">Background - Green</Channel>
+  <Channel Number="12" ActsOn="12">Background - Blue</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

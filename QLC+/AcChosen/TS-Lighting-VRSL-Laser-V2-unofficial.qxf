@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>AcChosen</Author>
+ </Creator>
+ <Manufacturer>TS Lighting (VRSL)</Manufacturer>
+ <Model>Laser V2</Model>
+ <Type>Laser</Type>
+ <Channel Name="Red S1" Preset="IntensityRed"/>
+ <Channel Name="Green S1" Preset="IntensityGreen"/>
+ <Channel Name="Blue S1" Preset="IntensityBlue"/>
+ <Channel Name="Red S2" Preset="IntensityRed"/>
+ <Channel Name="Green S2" Preset="IntensityGreen"/>
+ <Channel Name="Blue S2" Preset="IntensityBlue"/>
+ <Channel Name="Red S3" Preset="IntensityRed"/>
+ <Channel Name="Green S3" Preset="IntensityGreen"/>
+ <Channel Name="Blue S3" Preset="IntensityBlue"/>
+ <Channel Name="Dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Shutter">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="9">Open</Capability>
+  <Capability Min="10" Max="255">Slow To Fast</Capability>
+ </Channel>
+ <Channel Name="Gradient Mode">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="42">Gradient 1</Capability>
+  <Capability Min="43" Max="85">Gradient 2</Capability>
+  <Capability Min="86" Max="128">Gradient 3</Capability>
+  <Capability Min="129" Max="171">Gradient 4</Capability>
+  <Capability Min="172" Max="214">Mirrored Grad 1</Capability>
+  <Capability Min="215" Max="255">MIrrored Grad 2</Capability>
+ </Channel>
+ <Channel Name="Gradient Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Gradient Speed</Capability>
+ </Channel>
+ <Channel Name="Gradient Repeat">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Gradient Repeat</Capability>
+ </Channel>
+ <Channel Name="Beam Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="126">CW Slow To Fast</Capability>
+  <Capability Min="127" Max="127">127 Off</Capability>
+  <Capability Min="128" Max="255">CCW Slow To Fast</Capability>
+ </Channel>
+ <Channel Name="Beam Amount">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">Beam Amount</Capability>
+ </Channel>
+ <Channel Name="Connect Beams">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="255">Beam To Flat</Capability>
+ </Channel>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Z Rotate">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="127">CW Index</Capability>
+  <Capability Min="128" Max="200">CW Spin Slow To Fast</Capability>
+  <Capability Min="201" Max="255">CCW Spin Slow To Fast</Capability>
+ </Channel>
+ <Channel Name="Width">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="255">Width</Capability>
+ </Channel>
+ <Channel Name="Colour Step">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Mode Name="22 CH Mode">
+  <Channel Number="0" ActsOn="0">Red S1</Channel>
+  <Channel Number="1" ActsOn="1">Green S1</Channel>
+  <Channel Number="2" ActsOn="2">Blue S1</Channel>
+  <Channel Number="3" ActsOn="3">Red S2</Channel>
+  <Channel Number="4" ActsOn="4">Green S2</Channel>
+  <Channel Number="5" ActsOn="5">Blue S2</Channel>
+  <Channel Number="6" ActsOn="6">Red S3</Channel>
+  <Channel Number="7" ActsOn="7">Green S3</Channel>
+  <Channel Number="8" ActsOn="8">Blue S3</Channel>
+  <Channel Number="9" ActsOn="9">Dimmer</Channel>
+  <Channel Number="10" ActsOn="10">Shutter</Channel>
+  <Channel Number="11" ActsOn="11">Gradient Mode</Channel>
+  <Channel Number="12" ActsOn="12">Gradient Speed</Channel>
+  <Channel Number="13" ActsOn="13">Gradient Repeat</Channel>
+  <Channel Number="14" ActsOn="14">Beam Speed</Channel>
+  <Channel Number="15" ActsOn="15">Beam Amount</Channel>
+  <Channel Number="16" ActsOn="16">Connect Beams</Channel>
+  <Channel Number="17" ActsOn="17">Pan</Channel>
+  <Channel Number="18" ActsOn="18">Tilt</Channel>
+  <Channel Number="19" ActsOn="19">Z Rotate</Channel>
+  <Channel Number="20" ActsOn="20">Width</Channel>
+  <Channel Number="21" ActsOn="21">Colour Step</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

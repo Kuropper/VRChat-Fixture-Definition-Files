@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>OSH-PC</Author>
+ </Creator>
+ <Manufacturer>VRSL</Manufacturer>
+ <Model>ScreenSpaceFX - Filters</Model>
+ <Type>Effect</Type>
+ <Channel Name="Wet/Dry Master" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Hue">
+  <Group Byte="0">Colour</Group>
+ </Channel>
+ <Channel Name="Saturation++">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="Saturation--">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="Brightness++">
+  <Group Byte="0">Beam</Group>
+ </Channel>
+ <Channel Name="Brightness--">
+  <Group Byte="0">Beam</Group>
+ </Channel>
+ <Channel Name="Contrast++">
+  <Group Byte="0">Maintenance</Group>
+ </Channel>
+ <Channel Name="Contrast--">
+  <Group Byte="0">Maintenance</Group>
+ </Channel>
+ <Mode Name="8CH">
+  <Channel Number="0" ActsOn="0">Wet/Dry Master</Channel>
+  <Channel Number="1" ActsOn="1">Hue</Channel>
+  <Channel Number="2" ActsOn="2">Saturation++</Channel>
+  <Channel Number="3" ActsOn="3">Saturation--</Channel>
+  <Channel Number="4" ActsOn="4">Brightness++</Channel>
+  <Channel Number="5" ActsOn="4">Brightness--</Channel>
+  <Channel Number="6" ActsOn="6">Contrast++</Channel>
+  <Channel Number="7" ActsOn="7">Contrast--</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
